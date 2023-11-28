@@ -4,8 +4,8 @@ export class UserPreferences {
   public showFilterByDefault: boolean = true;
   public openPRNewWindow: boolean = true;
   public selectedProjects: string[] = [];
-  public topNumberCompletedAbandoned: number = 25;
-  public selectedDefaultSorting: string = "desc";
+  public topNumberCompletedAbandoned: number = 10;
+  public selectedDefaultSorting: string = "asc";
 
   constructor(public lastVisit: Date = new Date()) {
     this.restoreToDefaults();
@@ -15,9 +15,9 @@ export class UserPreferences {
     this.showFilterByDefault = true;
     this.openPRNewWindow = true;
     this.selectedProjects = [];
-    this.topNumberCompletedAbandoned = 25;
-    this.selectedDefaultSorting = "desc";
-  };
+    this.topNumberCompletedAbandoned = 10;
+    this.selectedDefaultSorting = "asc"; // desc<-decending oldest first  
+   };
 
   save = () => {
     this.lastVisit = new Date();

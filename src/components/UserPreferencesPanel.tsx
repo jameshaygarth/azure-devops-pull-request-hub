@@ -250,8 +250,8 @@ export function UserPreferencesPanel(props: IUserSettingsProps): JSX.Element {
               />
             </div>
             <div className="feature-description">
-              Set the max number of Completed/Abandoned PRs (tabs).
-            </div>
+              Set the max number of Completed/Abandoned PRs (tabs). <b>This is per repo.</b>            
+            </div>          
           </div>
         </div>
       </div>

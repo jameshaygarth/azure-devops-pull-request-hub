@@ -94,7 +94,7 @@ export class BranchDropDownItem {
 
   constructor(public repositoryName: string, public branchName: string) {
     this.branchName = this.branchName.replace(refsPreffix, "");
-    this.DISPLAY_NAME = `${this.repositoryName}->${this.branchName}`;
+    this.DISPLAY_NAME = `${this.branchName}`;//TODO:thiswaschanged`${this.repositoryName}->${this.branchName}`;
   }
 
   public get displayName(): string {

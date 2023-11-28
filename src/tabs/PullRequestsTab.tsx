@@ -393,6 +393,7 @@ export class PullRequestsTab extends React.Component<
     const url = new URL(document.referrer);
 
     console.log("Base URL reference: " + url.toString());
+console.log("BaseURLpathname:"+url.pathname.toString());
 
     if (
       url.origin !== AZDEVOPS_CLOUD_API_ORGANIZATION &&
@@ -402,7 +403,7 @@ export class PullRequestsTab extends React.Component<
         const collectionName = url.pathname.split("/")[2];
         this.baseUrl = `${url.origin}/tfs/${collectionName}/`;
       } else {
-        const collectionName = url.pathname.split("/")[1];
+        const collectionName = DevOps.getHost().name // url.pathname.split("/")[1];
         this.baseUrl = `${url.origin}/${collectionName}/`;
       }
     } else {

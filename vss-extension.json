@@ -1,7 +1,8 @@
 {
   "manifestVersion": 1,
-  "publisher": "caribeiro84",
+  "publisher": "JamesHaygarth",
   "name": "Pull Request Manager Hub",
+  "id": "pull-request-manager-hub-sav",
   "description": "A complete and friendly Pull Request Hub to manage all your repositories' PRs with must have filters at one simplified view.",
   "public": true,
   "categories": ["Azure Repos"],
@@ -16,7 +17,7 @@
   }],
   "repository": {
     "type": "git",
-    "url": "https://github.com/cribeiro84/azure-devops-pull-request-hub"
+    "uri": "https://github.com/jameshaygarth/azure-devops-pull-request-hub"
   },
   "icons": {
     "default": "marketplace/logo.png",
